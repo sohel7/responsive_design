@@ -29,8 +29,8 @@ return Scaffold(
   appBar: AppBar(
    title: Text('My App'),
   ),
+  // FractionallySizedBox : puro screen er specific kono onsho ke dokhol kore rakhbe , responsive vabe
   body: Center(
-    // FractionallySizedBox : puro screen er specific kono onsho ke dokhol korbe rsponsive vabe
     child: FractionallySizedBox(
       widthFactor: 0.5, // 100 Vager 50 vag dokhol korbe
       heightFactor: 0.3, // 100 Vager 30 vag dokhol korbe
