@@ -29,22 +29,16 @@ return Scaffold(
   appBar: AppBar(
    title: Text('My App'),
   ),
-
-  // Aspect Retio : Doirgho o Prosther onupat ke aspect Resio bole 
-  body: Container(
-    width: double.infinity,
-    height: 300,
-    color: Colors.red,
-    alignment: Alignment.center,
-      // Aspect Retio 
-    //=================
-    child: AspectRatio(
-      aspectRatio: 16/9,
+  body: Center(
+    // FractionallySizedBox : puro screen er specific kono onsho ke dokhol korbe rsponsive vabe
+    child: FractionallySizedBox(
+      widthFactor: 0.5, // 100 Vager 50 vag dokhol korbe
+      heightFactor: 0.3, // 100 Vager 30 vag dokhol korbe
       child: Container(
         color: Colors.green,
       ),
     ),
-  ),
+  )
 );
   }
 
