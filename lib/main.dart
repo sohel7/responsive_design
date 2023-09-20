@@ -36,7 +36,8 @@ return Scaffold(
     height: 300,
     color: Colors.red,
     alignment: Alignment.center,
-
+      // Aspect Retio 
+    //=================
     child: AspectRatio(
       aspectRatio: 16/9,
       child: Container(
