@@ -34,7 +34,7 @@ return Scaffold(
 // But jokhon  cotainer/Row?Column  nie kaj korte hole obossoe scroll dorkar hoe , tokhon
 body: SingleChildScrollView(
   scrollDirection: Axis.vertical,
-  //scrollDirection: Axis.horizontal, // for COLUMN
+  scrollDirection: Axis.horizontal, // for COLUMN
   // scrollDirection: Axis.vertical, // for ROW
   child:  Column(
     mainAxisAlignment: MainAxisAlignment.start,
