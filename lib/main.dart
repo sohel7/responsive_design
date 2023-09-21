@@ -1,6 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main(){
   runApp(MyApp());
@@ -29,22 +30,22 @@ return Scaffold(
   appBar: AppBar(
    title: Text('My App'),
   ),
+// Expand/ Flexible : Both are same
+body: Column(
+  mainAxisAlignment: MainAxisAlignment.start,
+  children: [
+    Expanded(
+      flex: 1, // puro screen er 1+3+1  er 1 vag dokhol korbe
+        child: Container(color: Colors.blue,)),
+    Expanded(
+      flex: 3, // puro screen er 1+3+2  er 3 vag dokhol korbe
+        child: Container(color: Colors.red,)),
+    Expanded(
+      flex: 2, // // puro screen er 1+3+2  er 2 vag dokhol korbe
+        child: Container(color: Colors.yellow,)),
 
-  // Aspect Retio : Doirgho o Prosther onupat ke aspect Resio bole 
-  body: Container(
-    width: double.infinity,
-    height: 300,
-    color: Colors.red,
-    alignment: Alignment.center,
-      // Aspect Retio 
-    //=================
-    child: AspectRatio(
-      aspectRatio: 16/9,
-      child: Container(
-        color: Colors.green,
-      ),
-    ),
-  ),
+  ],
+)
 );
   }
 
