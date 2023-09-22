@@ -30,7 +30,8 @@ return Scaffold(
   appBar: AppBar(
    title: Text('My App'),
   ),
-// Expand/ Flexible : Both are same
+// Expand/ Flexible : Both are same --> Expanded widget is used to control how a child widget 
+  //should occupy available space within its parent's layout. 
 body: Column(
   mainAxisAlignment: MainAxisAlignment.start,
   children: [
